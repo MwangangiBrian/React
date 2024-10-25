@@ -7,12 +7,12 @@ type ShoeSizesProps = {
 const ShoeSizes: React.FC<ShoeSizesProps> = ({ sizes }) => {
   return (
     <>
-    <h2 className="text-2xl font-light text-gray-800" >Size</h2>
+    <h2 className="text-sm font-medium text-gray-800" >SIZE</h2>
     <div className="flex space-x-2 mt-2">
       {sizes.map((size) => (
         <span
           key={size}
-          className="border border-gray-400 space-y-12 px-3 py-1 rounded-lg cursor-pointer hover:bg-gray-200"
+          className="border border-none space-y-12 px-3 py-1 rounded-lg cursor-pointer font-bold hover:bg-gray-200 bg-gray-300"
         >
           {size}
         </span>
